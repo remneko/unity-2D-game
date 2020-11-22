@@ -439,6 +439,7 @@ GameObject:
   - component: {fileID: 346661447}
   - component: {fileID: 346661451}
   - component: {fileID: 346661450}
+  - component: {fileID: 346661452}
   m_Layer: 0
   m_Name: "\u73A9\u5BB6"
   m_TagString: Untagged
@@ -523,9 +524,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346661446}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.91, y: -6.36, z: 0}
+  m_LocalPosition: {x: -40.03, y: -6.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1099861841}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -566,6 +568,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &346661452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346661446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d04fff68c2e4854daade88fba8f3d82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10.5
+  jump: 100
+  floor: 0
+  bullet: {fileID: 943905187}
+  bulletbirth: {fileID: 1099861841}
+  bulletspeed: 800
+  soundfire: {fileID: 8300000, guid: cb580e6d73b04574eb8e21ae5b8bf879, type: 3}
+  life: 0
 --- !u!1 &507300966
 GameObject:
   m_ObjectHideFlags: 0
@@ -6082,6 +6104,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &943905187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7140621910933228393, guid: c4a9f7ef998a18f40aa6576ba1831e64,
+    type: 3}
+  m_PrefabInstance: {fileID: 2100081964}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1057539361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6156,6 +6184,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f09806dbda213947acb38c99fa359f0, type: 3}
+--- !u!1 &1099861840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1099861841}
+  m_Layer: 0
+  m_Name: " \u751F\u6210\u9EDE"
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1099861841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099861840}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.8100014, y: 0.099999905, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 346661449}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1249829832
 GameObject:
   m_ObjectHideFlags: 0
